@@ -13,43 +13,124 @@
     <title>HTML form</title>
   </head>
   <body>
-    <form action="/" method="GET">
-      <label for="username">Your name</label>
-      <input type="text" name="user-name" id="username" />
-      <label for="useremail">Your email</label>
-      <input type="email" name="user-email" id="useremail" />
-      <label for="userage">Your age</label>
-      <input type="number" step="2" name="user-age" id="userage" />
-      <label for="userpassword">Your password</label>
-      <input type="password" name="user-password" id="userpassword" />
-      <label for="birthdate">Your birthdate</label>
-      <input type="date" name="user-birthdate" id="birthdate" />
-      <hr />
-      <h2>How should we verify your account?</h2>
-      <div class="form-control-inline">
-        <input
-          type="radio"
-          name="verify"
-          id="verify-text-massage"
-          value="text-massage"
-        />
-        <label for="verify-text-massage">via text message (SMS)</label>
-      </div>
-      <div class="form-control-inline">
-        <input
-          type="radio"
-          name="verify"
-          id="verify-phoen-call"
-          value="phone"
-        />
-        <label for="verify-phoen-call">Via a phone call</label>
-      </div>
-      <div class="form-control-inline">
-        <input type="radio" name="verify" id="verify-email" value="email" />
-        <label for="verify-email">Via an email</label>
-      </div>
+    <header>
+      <h1>Demo form</h1>
+    </header>
+    <main>
+      <form action="/" method="GET">
+        <section>
+          <h2>Your personal details</h2>
+          <ul>
+            <li>
+              <label for="username">Your name</label>
+              <input type="text" name="user-name" id="username" />
+            </li>
+            <li>
+              <label for="useremail">Your email</label>
+              <input type="email" name="user-email" id="useremail" />
+            </li>
+            <li>
+              <label for="userpassword">Your password</label>
+              <input type="password" name="user-password" id="userpassword" />
+            </li>
+          </ul>
+        </section>
 
-      <button>Submit</button>
-    </form>
+        <section>
+          <h2>more details</h2>
+          <ul>
+            <li>
+              <label for="userage">Your age</label>
+              <input type="number" step="2" name="user-age" id="userage" />
+            </li>
+            <li>
+              <label for="birthdate">Your birthdate</label>
+              <input type="date" name="user-birthdate" id="birthdate" />
+            </li>
+            <li>
+              <label for="favoritecolor">Your favorite color?</label>
+              <select name="favorite-color" id="favoritecolor">
+                <option value="Blue">Blue</option>
+                <option value="Black">Black</option>
+                <option value="Red">Red</option>
+              </select>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <label for="usermessage">Your message</label>
+          <textarea name="user-message" id="usermessage"></textarea>
+        </section>
+
+        <section>
+          <h2>어떻게 인증하나요?</h2>
+          <ul>
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                name="verify"
+                id="verify-text-massage"
+                value="text-massage"
+              />
+              <label for="verify-text-massage">via text message (SMS)</label>
+            </li>
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                name="verify"
+                id="verify-phoen-call"
+                value="phone"
+              />
+              <label for="verify-phoen-call">Via a phone call</label>
+            </li>
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                name="verify"
+                id="verify-email"
+                value="email"
+              />
+              <label for="verify-email">Via an email</label>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>무엇으로 연결하나요?</h2>
+          <ul>
+            <li class="form-control-inline">
+              <input
+                type="checkbox"
+                id="contact-email"
+                name="contact"
+                value="email"
+              />
+              <label for="contact-email">Contact me via email</label>
+            </li>
+            <li class="form-control-inline">
+              <input
+                type="checkbox"
+                id="contact-phone"
+                name="contact"
+                value="phone"
+              />
+              <label for="contact-phone">Contact me via phone</label>
+            </li>
+          </ul>
+        </section>
+<hr>
+        <section>
+          <div class="form-control-inline">
+            <input type="checkbox" id="agree-terms" name="terms" />
+            <label for="agree-terms">Agree to terms?</label>
+          </div>
+        </section>
+
+        <section>
+          <button>Submit</button>
+        </section>
+      </form>
+    </main>
   </body>
 </html>
