@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form challenge</title>
+    <link rel="stylesheet" href="homework.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Contack Us</h1>
+    </header>
+    <main>
+      <form action="/Challenge" method="get">
+        <section>
+          <h2>How can we help you?</h2>
+          <ul>
+            <li>
+              <label for="username">Your Name</label>
+              <input type="text" name="user-name" id="username" required />
+            </li>
+            <li>
+              <label for="useremail">Your E-mail Address</label>
+              <input type="email" name="user-email" id="useremail" required />
+            </li>
+            <li>
+              <label for="userphone">Your Phone Number</label>
+              <input type="number" name="user-phone" id="userphone" required minlength="5" />
+            </li>
+            <li>
+              <label for="usermessage">Your Message</label>
+              <textarea
+                name="user-message"
+                id="usermessage"
+                required
+                rows="8"
+                minlength="10"
+                maxlength="100"
+              ></textarea>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <div>
+            <label for="find">How did you fine us?</label>
+            <select name="find" id="find" required>
+              <option value="web search">Web Search</option>
+              <option value="Word of Mouth">Word of Mouth</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </section>
+
+        <section>
+          <h2>How should we reply?</h2>
+          <ul>
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                name="reply"
+                id="reply-call"
+                value="call"
+                required
+              /><label for="reply-call">Call me</label>
+            </li>
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                name="reply"
+                id="reply-email"
+                value="email"
+                required
+              /><label for="reply-email">Send me an email</label>
+            </li>
+            <li class="form-control-inline">
+              <input type="radio" name="reply" id="reply-no" value="no" /><label
+                for="reply-no"
+                required
+                >Don't reply</label
+              >
+            </li>
+          </ul>
+        </section>
+        <section>
+          <div>
+            <div class="form-control-inline">
+              <input type="checkbox" id="agree-terms" name="terms" required />
+              <label for="agree-terms">Accept Terms</label>
+            </div>
+          </div>
+        </section>
+        <section id="form-actions">
+          <button type="reset" class="btn-empty">Clear</button>
+          <button class="btn-filled">Submit</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>

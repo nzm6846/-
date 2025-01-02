@@ -1,0 +1,88 @@
+body {
+  background-color: rgb(223, 250, 255);
+}
+
+h1 {
+  text-align: center;
+  color: rgb(37, 37, 37);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  width: 35rem;
+  margin: 2rem auto;
+  background-color: aliceblue;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  display: block;
+}
+textarea {
+  resize: none;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  font: inherit;
+  padding: 0.25rem;
+  color: rgb(61, 58, 58);
+}
+
+input:focus,
+textarea:focus{
+background-color: rgb(217, 227, 247);
+}
+
+button {
+  font: inherit;
+  background-color: rgb(32, 5, 63);
+  color: white;
+  border: 1px solid rgb(32, 5, 63);
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.btn-filled{
+    background-color: rgb(51, 67, 100);
+    color: white;
+}
+
+.btn-empty{
+    background-color: transparent;
+    color: black;
+}
+
+.btn-empty:hover{
+   background-color: rgb(208, 215, 230);
+}
+.btn-filled:hover{
+    background-color: rgb(69, 89, 129);
+    border-color: rgb(69, 89, 129);
+}
+
+#form-actions{
+    text-align: right;
+}
+
+.form-control-inline {
+  display: flex;
+}
+.form-control-inline input {
+  width: auto;
+  margin-right: 0.5rem;
+}
